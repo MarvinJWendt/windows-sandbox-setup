@@ -2,8 +2,8 @@
 
 $global:readmeContent = @"
 
-| Name | Protected Client | vGPU | Memory | Networking | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
-| ---- | ---------------- | ---- | ------ | ---------- | --------------------- | ------------------- | ----------- | ----------- |
+| Name | Protected Client | vGPU | Memory | Network | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
+| ---- | ---------------- | ---- | ------ | ------- | --------------------- | ------------------- | ----------- | ----------- |
 
 "@
 

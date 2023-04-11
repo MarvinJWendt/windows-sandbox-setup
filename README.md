@@ -25,8 +25,8 @@ We have different pre-configured sandboxes in the `sandboxes` directory. You can
 
 <!-- configs:start -->
 
-| Name | Protected Client | vGPU | Memory | Networking | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
-| ---- | ---------------- | ---- | ------ | ---------- | --------------------- | ------------------- | ----------- | ----------- |
+| Name | Protected Client | vGPU | Memory | Network | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
+| ---- | ---------------- | ---- | ------ | ------- | --------------------- | ------------------- | ----------- | ----------- |
 | default | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
 | default with vGPU | ❌ | ✔️ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
 | performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
@@ -54,6 +54,7 @@ The `share\transfer` directory is a shared directory between the host and the sa
 This directory is read-only for the sandbox.
 
 You can use this directory to store files that you want to be available to the sandbox, but that you don't want to be modified by the sandbox.
+
 
 
 

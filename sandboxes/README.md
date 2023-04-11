@@ -1,6 +1,6 @@
 
-| Name | Protected Client | vGPU | Memory | Networking | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
-| ---- | ---------------- | ---- | ------ | ---------- | --------------------- | ------------------- | ----------- | ----------- |
+| Name | Protected Client | vGPU | Memory | Network | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
+| ---- | ---------------- | ---- | ------ | ------- | --------------------- | ------------------- | ----------- | ----------- |
 | default | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
 | default with vGPU | ❌ | ✔️ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
 | performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
