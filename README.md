@@ -37,7 +37,7 @@ We have different pre-configured sandboxes in the `sandboxes` directory. You can
 | secure performance with networking | ✔️ | ❌ | 8 GB | ✔️ | ❌ | ❌ | ❌ | ❌ |
 | unsecure | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 | unsecure performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecure performance vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance with vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 
 <!-- configs:end -->
 
@@ -56,6 +56,7 @@ The `share\transfer` directory is a shared directory between the host and the sa
 This directory is read-only for the sandbox.
 
 You can use this directory to store files that you want to be available to the sandbox, but that you don't want to be modified by the sandbox.
+
 
 
 

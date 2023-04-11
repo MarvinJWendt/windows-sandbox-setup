@@ -11,5 +11,5 @@
 | secure performance with networking | ✔️ | ❌ | 8 GB | ✔️ | ❌ | ❌ | ❌ | ❌ |
 | unsecure | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 | unsecure performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecure performance vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance with vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 
