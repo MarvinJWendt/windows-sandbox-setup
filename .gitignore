@@ -1,0 +1,13 @@
+share/transfer/*
+!share/transfer/README.md
+
+share/readonly/*
+!share/readonly/README.md
+!share/readonly/scripts
+
+share/readonly/scripts/assets/*
+!share/readonly/scripts/assets/README.md
+
+# Code editors
+.idea
+.vscode
