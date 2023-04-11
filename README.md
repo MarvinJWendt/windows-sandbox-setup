@@ -4,6 +4,8 @@
 
 This repository contains scripts and configurations to make Windows Sandboxes more user-friendly.
 
+![image](https://user-images.githubusercontent.com/31022056/231152379-d92cba26-afdb-4ef7-b3f4-14d639153ad7.png)
+
 ## Setup
 
 To download all assets, you need to run the `setup.ps1` script.
