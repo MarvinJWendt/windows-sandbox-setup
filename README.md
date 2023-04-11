@@ -4,11 +4,18 @@
 
 This repository contains scripts and configurations to make Windows Sandboxes more user-friendly.
 
-## Installation
+## Setup
 
 To download all assets, you need to run the `setup.ps1` script.
 
 This must only be done once. After that, you can run the `update.ps1` script to update the assets.
+
+## Installed Software
+
+The following software is installed by default:
+- Winget
+- Windows Terminal
+
 
 ## Running a Sandbox
 
@@ -20,15 +27,15 @@ We have different pre-configured sandboxes in the `sandboxes` directory. You can
 
 | Name | Protected Client | vGPU | Memory | Networking | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
 | ---- | ---------------- | ---- | ------ | ---------- | --------------------- | ------------------- | ----------- | ----------- |
-| default | ❌ | ❌ | 4000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| default with vGPU | ❌ | ✔️ | 4000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| performance | ❌ | ❌ | 8000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| performance with vGPU | ❌ | ✔️ | 8000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| secure | ✔️ | ❌ | 4000 | ❌ | ❌ | ❌ | ❌ | ❌ |
-| secure with networking | ✔️ | ❌ | 4000 | ✔️ | ❌ | ❌ | ❌ | ❌ |
-| unsecure | ❌ | ❌ | 4000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecure performance | ❌ | ❌ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecure performance vGPU | ❌ | ✔️ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| default | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| default with vGPU | ❌ | ✔️ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| performance with vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| secure | ✔️ | ❌ | 4 GB | ❌ | ❌ | ❌ | ❌ | ❌ |
+| secure with networking | ✔️ | ❌ | 4 GB | ✔️ | ❌ | ❌ | ❌ | ❌ |
+| unsecure | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 
 <!-- configs:end -->
 
@@ -47,6 +54,7 @@ The `share\transfer` directory is a shared directory between the host and the sa
 This directory is read-only for the sandbox.
 
 You can use this directory to store files that you want to be available to the sandbox, but that you don't want to be modified by the sandbox.
+
 
 
 

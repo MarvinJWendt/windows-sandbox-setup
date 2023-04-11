@@ -57,7 +57,9 @@ function Write-XMLConfiguration {
     $configName = $configName -replace 'vgpu', 'vGPU'
 
     # Append to readme table, replace "Enable" with "✔️" and "Disable" with "❌"
-    $global:readmeContent += "| $configName | $($ProtectedClient -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VGpu -replace 'Enable', '✔️' -replace 'Disable', '❌') | $MemoryInMB | $($Networking -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($ClipboardRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($PrinterRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VideoInput -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($AudioInput -replace 'Enable', '✔️' -replace 'Disable', '❌') |`n"
+    # convert the memory to GB
+    $MemoryInMB = [math]::Round($MemoryInMB / 1024, 2)
+    $global:readmeContent += "| $configName | $($ProtectedClient -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VGpu -replace 'Enable', '✔️' -replace 'Disable', '❌') | $MemoryInMB GB | $($Networking -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($ClipboardRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($PrinterRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VideoInput -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($AudioInput -replace 'Enable', '✔️' -replace 'Disable', '❌') |`n"
 
     Write-Output "Generated $FilePath"
 

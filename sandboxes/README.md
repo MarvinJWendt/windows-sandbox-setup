@@ -1,13 +1,13 @@
 
 | Name | Protected Client | vGPU | Memory | Networking | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
 | ---- | ---------------- | ---- | ------ | ---------- | --------------------- | ------------------- | ----------- | ----------- |
-| default | ❌ | ❌ | 4000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| default with vGPU | ❌ | ✔️ | 4000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| performance | ❌ | ❌ | 8000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| performance with vGPU | ❌ | ✔️ | 8000 | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
-| secure | ✔️ | ❌ | 4000 | ❌ | ❌ | ❌ | ❌ | ❌ |
-| secure with networking | ✔️ | ❌ | 4000 | ✔️ | ❌ | ❌ | ❌ | ❌ |
-| unsecure | ❌ | ❌ | 4000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecure performance | ❌ | ❌ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecure performance vGPU | ❌ | ✔️ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| default | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| default with vGPU | ❌ | ✔️ | 4 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| performance with vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ❌ | ❌ | ✔️ |
+| secure | ✔️ | ❌ | 4 GB | ❌ | ❌ | ❌ | ❌ | ❌ |
+| secure with networking | ✔️ | ❌ | 4 GB | ✔️ | ❌ | ❌ | ❌ | ❌ |
+| unsecure | ❌ | ❌ | 4 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance | ❌ | ❌ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance vGPU | ❌ | ✔️ | 8 GB | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 
