@@ -1,0 +1,25 @@
+<Configuration>
+  <ProtectedClient>Enable</ProtectedClient>
+  <VGpu>Disable</VGpu>
+  <MemoryInMB>8000</MemoryInMB>
+  <Networking>Enable</Networking>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <VideoInput>Disable</VideoInput>
+  <AudioInput>Disable</AudioInput>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>..\share\transfer</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\share\transfer</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>..\share\readonly</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\share\readonly</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>C:\Users\WDAGUtilityAccount\Desktop\share\readonly\scripts\setup.cmd</Command>
+  </LogonCommand>
+</Configuration>

@@ -79,6 +79,10 @@ Write-XMLConfiguration -FilePath .\performance-with-vgpu.wsb -MemoryInMB 8000 -V
 Write-XMLConfiguration -FilePath .\secure.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Disable'
 # Write secure-with-networking
 Write-XMLConfiguration -FilePath .\secure-with-networking.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Enable'
+# Write secure-performance
+Write-XMLConfiguration -FilePath .\secure-performance.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Disable' -MemoryInMB 8000
+# Write secure-performance-with-networking
+Write-XMLConfiguration -FilePath .\secure-performance-with-networking.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Enable' -MemoryInMB 8000
 
 # Write unsecure
 Write-XMLConfiguration -FilePath .\unsecure.wsb -ProtectedClient 'Disable' -ClipboardRedirection 'Enable' -PrinterRedirection 'Enable' -VideoInput 'Enable' -AudioInput 'Enable' -Networking 'Enable'
