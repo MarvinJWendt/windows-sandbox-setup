@@ -2,8 +2,8 @@
 
 $global:readmeContent = @"
 
-| Name | Protected Client | vGPU | Memory | Network | Clipboard Redirection | Printer Redirection | Video Input | Audio Input |
-| ---- | ---------------- | ---- | ------ | ------- | --------------------- | ------------------- | ----------- | ----------- |
+| Name | Protected Client | vGPU | Memory | Network | Clipboard Redirection | Printer Redirection | Video Input | Audio Input | Transfer Files |
+| ---- | ---------------- | ---- | ------ | ------- | --------------------- | ------------------- | ----------- | ----------- | -------------- |
 
 "@
 
@@ -60,7 +60,7 @@ function Write-XMLConfiguration {
     # Append to readme table, replace "Enable" with "✔️" and "Disable" with "❌"
     # convert the memory to GB
     $MemoryInMB = [math]::Round($MemoryInMB / 1024, 2)
-    $global:readmeContent += "| $configName | $($ProtectedClient -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VGpu -replace 'Enable', '✔️' -replace 'Disable', '❌') | $MemoryInMB GB | $($Networking -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($ClipboardRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($PrinterRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VideoInput -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($AudioInput -replace 'Enable', '✔️' -replace 'Disable', '❌') |`n"
+    $global:readmeContent += "| $configName | $($ProtectedClient -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VGpu -replace 'Enable', '✔️' -replace 'Disable', '❌') | $MemoryInMB GB | $($Networking -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($ClipboardRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($PrinterRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VideoInput -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($AudioInput -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($TransferReadonly -replace 'false', '✔️' -replace 'true', '❌') |`n"
 
     Write-Output "Generated $FilePath"
 
@@ -75,6 +75,11 @@ Write-XMLConfiguration -FilePath .\default-with-vgpu.wsb -VGpu 'Enable'
 Write-XMLConfiguration -FilePath .\performance.wsb -MemoryInMB 8000
 # Write performance-with-vgpu
 Write-XMLConfiguration -FilePath .\performance-with-vgpu.wsb -MemoryInMB 8000 -VGpu 'Enable'
+
+# Write total-isolation
+Write-XMLConfiguration -FilePath .\total-isolation.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Disable' -TransferReadonly 'true'
+# Write total-isolation-performance
+Write-XMLConfiguration -FilePath .\total-isolation-performance.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Disable' -TransferReadonly 'true' -MemoryInMB 8000
 
 # Write secure
 Write-XMLConfiguration -FilePath .\secure.wsb -ProtectedClient 'Enable' -ClipboardRedirection 'Disable' -PrinterRedirection 'Disable' -VideoInput 'Disable' -AudioInput 'Disable' -Networking 'Disable'
