@@ -8,6 +8,6 @@
 | secure | ✔️ | ❌ | 4000 | ❌ | ❌ | ❌ | ❌ | ❌ |
 | secure with networking | ✔️ | ❌ | 4000 | ✔️ | ❌ | ❌ | ❌ | ❌ |
 | unsecure | ❌ | ❌ | 4000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecureperformance | ❌ | ❌ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
-| unsecureperformancevGPU | ❌ | ✔️ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance | ❌ | ❌ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
+| unsecure performance vGPU | ❌ | ✔️ | 8000 | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ |
 

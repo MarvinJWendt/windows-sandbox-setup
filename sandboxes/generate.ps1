@@ -53,10 +53,8 @@ function Write-XMLConfiguration {
     # append config to readme as a table
     $configName = $FilePath -replace '.wsb$'
     $configName = $configName -replace '.\\'
-    $configName = $configName -replace '-'
-    $configName = $configName -replace 'with', ' with '
+    $configName = $configName -replace '-', ' '
     $configName = $configName -replace 'vgpu', 'vGPU'
-    $configName = $configName -replace 'readonly', 'read-only'
 
     # Append to readme table, replace "Enable" with "✔️" and "Disable" with "❌"
     $global:readmeContent += "| $configName | $($ProtectedClient -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VGpu -replace 'Enable', '✔️' -replace 'Disable', '❌') | $MemoryInMB | $($Networking -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($ClipboardRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($PrinterRedirection -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($VideoInput -replace 'Enable', '✔️' -replace 'Disable', '❌') | $($AudioInput -replace 'Enable', '✔️' -replace 'Disable', '❌') |`n"
